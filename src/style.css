@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Premier League";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("./assets/fonts/PremierLeagueWithLionNumbers.ttf") format("woff2");
+}
+
+/* purple-header: #37003c */
+
+* {
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Premier League";
+  font-weight: 100;
+}
+
+.schedule-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-game {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid gray;
+}
+
+p {
+  font-size: 25px;
+}
+
+img {
+  height: 50px;
+}
+
+.score {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}

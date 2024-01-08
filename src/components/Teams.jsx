@@ -1,4 +1,4 @@
-const Matches = () => {
+const Teams = (teams) => {
   let teams = [
     {
       fullName: "Arsenal",
@@ -97,7 +97,7 @@ const Matches = () => {
       logo: Object.assign(new Image(), {
         src: "/src/assets/logos/LIV.png",
       }),
-      coefficient: 1.80,
+      coefficient: 1.8,
     },
     {
       fullName: "Luton",
@@ -185,19 +185,16 @@ const Matches = () => {
   return (
     <>
       <div>
-      {teams.map((team, index) => (
-              <div
-                id={team.threeLetterName}
-                key={index}
-              >
-                <h1>{team.fullName}</h1>
-                <p>Stadium: {team.stadium}</p>
-                <img src={team.logo.src} alt={team.threeLetterName} />
-              </div>
-            ))}
+        {teams.map((team, index) => (
+          <div id={team.threeLetterName} key={index}>
+            <h1>{team.fullName}</h1>
+            <p>Stadium: {team.stadium}</p>
+            <img src={team.logo.src} alt={team.threeLetterName} />
+          </div>
+        ))}
       </div>
     </>
   );
 };
-
-export default Matches;
+ 
+export default Teams;
