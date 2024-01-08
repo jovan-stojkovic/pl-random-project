@@ -9,7 +9,6 @@
 /* purple-header: #37003c */
 
 * {
-  background-color: whitesmoke;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -17,7 +16,8 @@
   font-weight: 100;
 }
 
-.schedule-container {
+.app {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,20 +27,43 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  padding-top: 5px;
   padding-bottom: 5px;
   border-bottom: 2px solid gray;
+  width: 1000px;
 }
 
-p {
-  font-size: 25px;
+.home-team {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 50%;
+  gap: 20px;
+}
+
+.away-team {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 50%;
+  gap: 20px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #37003c;
+ padding: 5px;
+  border-radius: 5px;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
 }
 
 img {
   height: 50px;
-}
-
-.score {
-  font-size: 30px;
-  display: flex;
-  align-items: center;
 }
